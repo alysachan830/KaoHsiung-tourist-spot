@@ -1,0 +1,301 @@
+/* reset css */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my css */
+
+body{
+    font-family: "微軟正黑體","Microsoft JhengHei",Arial,sans-serif;
+}
+
+.wrap{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.top{
+    background-image: url("images/Hero.png");
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 80px;
+
+}
+
+#chooseArea{
+    width: 30%;
+    background: rgb(255,255,255,0.8);
+    padding: 5px 0;
+    border-radius: 3px;
+    border: 2px solid #fff;
+    margin-bottom: 130px;
+}
+
+.hotArea{
+    background: #fff;
+    border-radius: 3px;
+    padding: 17px 30px;
+    margin-bottom: 40px;
+    width: 75%;
+    box-shadow: 1px 1px 4px silver;
+}
+
+.hotArea p{
+    margin-bottom: 17px;
+}
+
+.hotAreaBtn{
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    border-width: 0px;
+    padding: 10px 30px;
+    margin: 0 15px;
+}
+
+.sanmin{
+    background: #8a82cc;
+}
+
+.sanmin:hover{
+    background: #6b659e;
+}
+
+.meinong{
+    background: #ffa782;
+}
+
+.meinong:hover{
+    background: #d88967;
+}
+
+.dashu{
+    background: #f5d005;
+}
+
+.dashu:hover{
+    background: #d1b305;
+}
+
+.gangshan{
+    background: #559AC8; 
+}
+
+.gangshan:hover{
+    background: #4985ad; 
+}
+
+
+
+.line{
+    border-top: 1px dashed #559AC8;
+    width: 1024px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+
+
+.circle{
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid #559AC8;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.triangle{
+    width: 14px;
+    height: 14px;
+    background: #559AC8;
+    clip-path: polygon(50% 50%, 100% 50%, 50% 100%, 0% 50%);
+    margin: 1.5px 3px;
+
+}
+
+main{
+    position: relative;
+}
+
+.areaTitle{
+    color: #8A82CC;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.areaContent{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.areaContent li{
+    width: 500px;
+    margin: 0 0 30px 0;
+    box-shadow: 1px 1px 4px silver;
+}
+
+.spotImage{
+    height: 150px;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 14px 10px 14px;
+}
+
+.spotTitle{
+    font-size: 22px;
+    color: #fff;
+}
+
+.spotArea{
+    color: #fff;
+}
+
+.spotText{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.spotTime{
+    margin-bottom: 10px;
+}
+
+.spotTime::before{
+    content: url("images/icons_clock.png");
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.spotVenue{
+    margin-bottom: 10px;
+}
+
+.spotVenue::before{
+    content: url("images/icons_pin.png");
+    width: 16px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+.spotTel::before{
+    content: url("images/icons_phone.png");
+    width: 12px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.spotPrice{
+    align-self: flex-end;
+}
+
+.spotPrice::before{
+    content: url("images/icons_tag.png");
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.goTopBtn{
+    position: absolute;
+    right: 0;
+    height: 24px;
+    width: 24px;
+    background-image: url("images/btn_goTop.png");
+}
+
+.pageNumber{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.pageNumber a{
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    color: gray;
+}
+
+.pageNumber a:hover{
+    color: #4985ad;
+}
+
+footer{
+    background: #559AC8;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footerTitle{
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footerSource{
+    color: #f5d005;
+}
+

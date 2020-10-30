@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高雄旅遊資訊</title>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="top">
+            <h1 class="title">高雄旅遊資訊</h1>
+
+            <select name="chooseArea" id="chooseArea">
+                <option value="">- -全部行政區- -</option>
+            </select>
+
+            <div class="hotArea">
+                <p>熱門行政區</p>
+                <input type="button" value="三民區" class="sanmin hotAreaBtn">
+                <input type="button" value="美濃區" class="meinong hotAreaBtn">
+                <input type="button" value="大樹區" class="dashu hotAreaBtn">
+                <input type="button" value="岡山區" class="gangshan hotAreaBtn">
+            </div>
+
+            <div class="line">
+                <div class="circle">
+                    <div class="triangle"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <main>
+            <h2 class="areaTitle"></h2>
+            <ul class="areaContent">
+            </ul>
+            <a href="#" class="goTopBtn"></a>
+        </main>
+
+        <div class="pageNumber">
+        </div>
+
+        <footer>
+            <p class="footerTitle">高雄旅遊網</p>
+            <p class="footerSource">資料來源：高雄市政府</p>
+        </footer>
+
+    </div>
+
+    <script src="js/all.js"></script>
+</body>
+</html>
